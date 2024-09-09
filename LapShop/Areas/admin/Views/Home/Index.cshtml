@@ -1,0 +1,333 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="content-wrapper">
+    <div class="page-header">
+        <h3 class="page-title"> ار تي ال </h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">تخطيطات الصفحة</a></li>
+                <li class="breadcrumb-item active" aria-current="page">ار تي ال</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-md-4 stretch-card grid-margin">
+            <div class="card bg-gradient-danger card-img-holder text-white">
+                <div class="card-body">
+                    <img src="~/Admin/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
+                    <h4 class="font-weight-normal mb-3">
+                        المبيعات الأسبوعية<i class="mdi mdi-chart-line mdi-24px float-start"></i>
+                    </h4>
+                    <h2 class="mb-5">$ 15,0000</h2>
+                    <h6 class="card-text">زيادة بنسبة 60 ٪</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 stretch-card grid-margin">
+            <div class="card bg-gradient-info card-img-holder text-white">
+                <div class="card-body">
+                    <img src="~/Admin/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
+                    <h4 class="font-weight-normal mb-3">
+                        الطلبات الأسبوعية<i class="mdi mdi-bookmark-outline mdi-24px float-start"></i>
+                    </h4>
+                    <h2 class="mb-5">45,6334</h2>
+                    <h6 class="card-text">انخفضت بنسبة 10 ٪</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 stretch-card grid-margin">
+            <div class="card bg-gradient-success card-img-holder text-white">
+                <div class="card-body">
+                    <img src="~/Admin/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image">
+                    <h4 class="font-weight-normal mb-3">
+                        الزوار على الانترنت <i class="mdi mdi-diamond mdi-24px float-start"></i>
+                    </h4>
+                    <h2 class="mb-5">95,5741</h2>
+                    <h6 class="card-text">زيادة بنسبة 5 ٪</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-7 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                    <div class="clearfix">
+                        <h4 class="card-title float-end">زيارة والاحصاءات المبيعات</h4>
+                        <div id="visit-sale-chart-legend-dark" class="rounded-legend legend-horizontal legend-top-right float-start"><ul><li><span class="legend-dots" style="background:linear-gradient(to right, rgba(218, 140, 255, 1), rgba(154, 85, 255, 1))"></span>CHN</li><li><span class="legend-dots" style="background:linear-gradient(to right, rgba(255, 191, 150, 1), rgba(254, 112, 150, 1))"></span>USA</li><li><span class="legend-dots" style="background:linear-gradient(to right, rgba(54, 215, 232, 1), rgba(177, 148, 250, 1))"></span>UK</li></ul></div>
+                    </div>
+                    <canvas id="visit-sale-chart-dark" class="mt-4 chartjs-render-monitor" width="745" height="372" style="display: block; width: 596px; height: 298px;"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                    <h4 class="card-title">مصادر حركة المرور</h4>
+                    <canvas id="traffic-chart" width="488" height="243" style="display: block; width: 391px; height: 195px;" class="chartjs-render-monitor"></canvas>
+                    <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4"><ul><li><span class="legend-dots" style="background:linear-gradient(to right, rgba(54, 215, 232, 1), rgba(177, 148, 250, 1))"></span>Search Engines<span class="float-right">30%</span></li><li><span class="legend-dots" style="background:linear-gradient(to right, rgba(6, 185, 157, 1), rgba(132, 217, 210, 1))"></span>Direct Click<span class="float-right">30%</span></li><li><span class="legend-dots" style="background:linear-gradient(to right, rgba(255, 191, 150, 1), rgba(254, 112, 150, 1))"></span>Bookmarks Click<span class="float-right">40%</span></li></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 grid-margin">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">التذاكر الحديثة</h4>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th> المحال </th>
+                                    <th> موضوع </th>
+                                    <th> الحالة </th>
+                                    <th> اخر تحديث </th>
+                                    <th> تتبع الهوية</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="~/Admin/assets/images/faces/face1.jpg" class="ms-2" alt="image"> ديفيد جراي
+                                    </td>
+                                    <td> لم يتم تلقي الصندوق</td>
+                                    <td>
+                                        <label class="badge badge-gradient-success">منجز</label>
+                                    </td>
+                                    <td> 5 ديسمبر ، 2017 </td>
+                                    <td> WD-12345 </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="~/Admin/assets/images/faces/face2.jpg" class="ms-2" alt="image"> ستيلا جونسون
+                                    </td>
+                                    <td> ارتفاع وقت التحميل </td>
+                                    <td>
+                                        <label class="badge badge-gradient-warning">التقدم</label>
+                                    </td>
+                                    <td> 12 ديسمبر ، 2017 </td>
+                                    <td> WD-12346 </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="~/Admin/assets/images/faces/face3.jpg" class="ms-2" alt="image"> مارينا ميشيل
+                                    </td>
+                                    <td> موقع لأسفل لمدة أسبوع واحد</td>
+                                    <td>
+                                        <label class="badge badge-gradient-info">في الانتظار</label>
+                                    </td>
+                                    <td> 16 ديسمبر ، 2017 </td>
+                                    <td> WD-12347 </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="~/Admin/assets/images/faces/face4.jpg" class="ms-2" alt="image"> فلان الفلاني
+                                    </td>
+                                    <td> فقدان السيطرة على الخادم</td>
+                                    <td>
+                                        <label class="badge badge-gradient-danger">مرفوض</label>
+                                    </td>
+                                    <td>3 ديسمبر ، 2017</td>
+                                    <td> WD-12348 </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+       
+        <div class="col-lg-7 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">التحديثات الأخيرة</h4>
+                    <div class="d-flex">
+                        <div class="d-flex align-items-center ms-4 text-muted font-weight-light">
+                            <i class="mdi mdi-account-outline icon-sm ms-2"></i>
+                            <span>جاك مينكو</span>
+                        </div>
+                        <div class="d-flex align-items-center text-muted font-weight-light">
+                            <i class="mdi mdi-clock icon-sm ms-2"></i>
+                            <span>3 أكتوبر 2018</span>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6 pe-1">
+                            <img src="~/Admin/assets/images/dashboard/img_1.jpg" class="mb-2 mw-100 w-100 rounded" alt="image">
+                            <img src="~/Admin/assets/images/dashboard/img_4.jpg" class="mw-100 w-100 rounded" alt="image">
+                        </div>
+                        <div class="col-6 ps-1">
+                            <img src="~/Admin/assets/images/dashboard/img_2.jpg" class="mb-2 mw-100 w-100 rounded" alt="image">
+                            <img src="~/Admin/assets/images/dashboard/img_3.jpg" class="mw-100 w-100 rounded" alt="image">
+                        </div>
+                    </div>
+                    <div class="d-flex mt-5 align-items-top">
+                        <img src="~/Admin/assets/images/faces/face3.jpg" class="img-sm rounded-circle ms-3" alt="image">
+                        <div class="mb-0 flex-grow">
+                            <h5 class="ms-2 mb-2">موقع المدرسة - وحدة التوثيق.</h5>
+                            <p class="mb-0 font-weight-light">إنها حقيقة ثابتة منذ فترة طويلة وهي أن القراء سوف يصرفهم المحتوى المقروء للصفحة.</p>
+                        </div>
+                        <div class="ms-auto">
+                            <i class="mdi mdi-heart-outline text-muted"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-7 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">حالة المشروع</h4>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th> # </th>
+                                    <th> اسم </th>
+                                    <th> تاريخ الاستحقاق</th>
+                                    <th> تقدم </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> 1 </td>
+                                    <td> هيرمان بيك</td>
+                                    <td> 15 مايو 2015</td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 2 </td>
+                                    <td> فوضوي آدم</td>
+                                    <td> 01 يوليو 2015 </td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 3 </td>
+                                    <td> جون ريتشاردز</td>
+                                    <td> 12 أبريل 2015 </td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-gradient-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 4 </td>
+                                    <td> بيتر ميجيك </td>
+                                    <td> 15 مايو 2015 </td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-gradient-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 5 </td>
+                                    <td> إدوارد </td>
+                                    <td> 3 مايو 2015 </td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 5 </td>
+                                    <td> رونالد </td>
+                                    <td> 05 يونيو 2015 </td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title text-white">لكى يفعل</h4>
+                    <div class="add-items d-flex">
+                        <input type="text" class="form-control todo-list-input" placeholder="ماذا تحتاج أن تفعل اليوم؟">
+                        <button class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn" id="add-task">إضافة</button>
+                    </div>
+                    <div class="list-wrapper">
+                        <ul class="d-flex flex-column-reverse todo-list todo-list-custom">
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="checkbox" type="checkbox"> لقاء مع أليسا<i class="input-helper"></i>
+                                    </label>
+                                </div>
+                                <i class="remove mdi mdi-close-circle-outline"></i>
+                            </li>
+                            <li class="completed">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="checkbox" type="checkbox" checked=""> استدعاء جون<i class="input-helper"></i>
+                                    </label>
+                                </div>
+                                <i class="remove mdi mdi-close-circle-outline"></i>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="checkbox" type="checkbox"> إنشاء فاتورة <i class="input-helper"></i>
+                                    </label>
+                                </div>
+                                <i class="remove mdi mdi-close-circle-outline"></i>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="checkbox" type="checkbox"> طباعة البيانات <i class="input-helper"></i>
+                                    </label>
+                                </div>
+                                <i class="remove mdi mdi-close-circle-outline"></i>
+                            </li>
+                            <li class="completed">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="checkbox" type="checkbox" checked=""> الاستعداد للعرض التقديمي <i class="input-helper"></i>
+                                    </label>
+                                </div>
+                                <i class="remove mdi mdi-close-circle-outline"></i>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="checkbox" type="checkbox"> التقاط الاطفال من المدرسة <i class="input-helper"></i>
+                                    </label>
+                                </div>
+                                <i class="remove mdi mdi-close-circle-outline"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- content-wrapper ends -->
